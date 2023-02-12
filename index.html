@@ -29,17 +29,21 @@
       main * {
         max-width: var(--measure);
       }
-      main > * + * {
+      main * + * {
         margin-block-start: var(--s0);
       }
       figure {
-        margin: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
       }
       figure > * + * {
         margin-block-start: var(--s0);
       }
       video {
         width: 100%;
+      }
+      main li + li {
+        margin-block-start: 0;
       }
     </style>
   </head>
@@ -51,7 +55,96 @@
         <a href="https://github.com/fildon/learning-lindy">learning-lindy</a>
       </p>
       <article>
-        <h2>Brownies</h2>
+        <h2>Fundamentals: 2 and 3</h2>
+        <ul>
+          <li>Send out</li>
+          <li>Send in</li>
+          <li>Change of places (3 variations)</li>
+          <li>Tuck turn from closed</li>
+          <li>Tuck turn from open</li>
+          <li>Front step send out</li>
+          <li>Tuck turn with two spins</li>
+          <li>4 count variations of everything</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/class2and3.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Fundamentals: 5</h2>
+        <ul>
+          <li>Tandem Charleston</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/class5.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Fundamentals: 9</h2>
+        <ul>
+          <li>Kick the dog with turn</li>
+          <li>Open doors</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/class9.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Fundamentals: Dips</h2>
+        <ul>
+          <li>Dip near side</li>
+          <li>Dip far side</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/dips.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Fundamentals: Sailor Kicks</h2>
+        <ul>
+          <li>Three exit variations</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/Xsailors.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Fundamentals: Solo Work</h2>
+        <ul>
+          <li>Swivels</li>
+          <li>Kick ball change</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/solo.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Fundamentals: Swing Phrases</h2>
+        <ul>
+          <li>Swing Phrase</li>
+          <li>Circle</li>
+          <li>Kick ball change</li>
+          <li>Scissor kicks</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/swingphrase.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Fundamentals: Over rotated swing outs</h2>
+        <ul>
+          <li>Over rotated swingouts with switches</li>
+          <li>Optional kick ball changes</li>
+          <li>Stomp off</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/last.mp4" />
+        </video>
+      </article>
+      <article>
+        <h2>Bonus content: Brownies!</h2>
+        Ivar made some fantastic brownies for a social dance, and later shared
+        with us the recipe.
         <figure>
           <img src="./static/brownies.jpg" />
           <figcaption>
@@ -63,17 +156,6 @@
             the batter between multiple forms (or eat it raw...). Enjoy!
           </figcaption>
         </figure>
-      </article>
-      <article>
-        <h2>Last class</h2>
-        <ul>
-          <li>Over rotated swingouts with switches</li>
-          <li>Optional kick ball changes</li>
-          <li>Stomp off</li>
-        </ul>
-        <video controls preload="metadata">
-          <source src="./static/last.mp4" />
-        </video>
       </article>
     </main>
   </body>
