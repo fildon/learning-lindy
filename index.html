@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Lindy</title>
+    <style>
+      :root {
+        --s0: 1em;
+        --measure: 60ch;
+        --accent: #e92438;
+        --soft: #f8efde;
+        --hard: #231f1e;
+      }
+      body {
+        background-color: var(--soft);
+        color: var(--hard);
+      }
+      main {
+        margin-inline: auto;
+        max-inline-size: var(--measure);
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      main * {
+        max-width: var(--measure);
+      }
+      main > * + * {
+        margin-block-start: var(--s0);
+      }
+      figure {
+        margin: 0;
+      }
+      figure > * + * {
+        margin-block-start: var(--s0);
+      }
+      video {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Learning Lindy</h1>
+      <article>
+        <h2>Brownies</h2>
+        <figure>
+          <img src="./static/brownies.jpg" />
+          <figcaption>
+            One of the things to pay particular attention to would be the size
+            of the baking form. The recipe specifies 22.5x30 cm. If you have a
+            form of a different size make sure you don't put the whole recipe in
+            the form because they it will either be too dry or too wet. What I
+            do is that I either change the amount of batter I make, or divide
+            the batter between multiple forms (or eat it raw...). Enjoy!
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <h2>Last class</h2>
+        <ul>
+          <li>Over rotated swingouts with switches</li>
+          <li>Optional kick ball changes</li>
+          <li>Stomp off</li>
+        </ul>
+        <video controls preload="metadata">
+          <source src="./static/last.mp4" />
+        </video>
+      </article>
+    </main>
+  </body>
+</html>
