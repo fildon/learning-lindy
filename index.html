@@ -45,6 +45,9 @@
       main li + li {
         margin-block-start: 0;
       }
+      blockquote {
+        margin: 0;
+      }
     </style>
   </head>
   <body>
@@ -143,18 +146,22 @@
       </article>
       <article>
         <h2>Bonus content: Brownies!</h2>
-        Ivar made some fantastic brownies for a social dance, and later shared
-        with us the recipe.
+        <p>
+          Ivar made some fantastic brownies for a social dance, and later shared
+          with us the recipe.
+        </p>
+        <img src="./static/brownies.jpg" />
+        <p>Ivar provided some additional advice:</p>
         <figure>
-          <img src="./static/brownies.jpg" />
-          <figcaption>
-            One of the things to pay particular attention to would be the size
+          <blockquote>
+            "One of the things to pay particular attention to would be the size
             of the baking form. The recipe specifies 22.5x30 cm. If you have a
             form of a different size make sure you don't put the whole recipe in
             the form because they it will either be too dry or too wet. What I
             do is that I either change the amount of batter I make, or divide
-            the batter between multiple forms (or eat it raw...). Enjoy!
-          </figcaption>
+            the batter between multiple forms (or eat it raw...). Enjoy!"
+          </blockquote>
+          <figcaption>- <cite>Ivar</cite></figcaption>
         </figure>
       </article>
     </main>
