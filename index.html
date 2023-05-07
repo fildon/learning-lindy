@@ -28,6 +28,7 @@
       }
       main * {
         max-width: 100%;
+        line-height: 1.5;
       }
       main * + * {
         margin-block-start: var(--s0);
@@ -47,6 +48,11 @@
       }
       blockquote {
         margin: 0;
+      }
+      .morse {
+        line-height: 1.5;
+        font-family: monospace;
+        text-align: center;
       }
     </style>
   </head>
@@ -288,5 +294,9 @@
         </video>
       </article>
     </main>
+    <pre aria-hidden="true" class="morse">
+█ ███ █
+███ ███
+    </pre>
   </body>
 </html>
