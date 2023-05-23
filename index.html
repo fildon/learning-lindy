@@ -15,55 +15,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Lindy</title>
     <style>
+      /* Global */
       :root {
-        --s0: 1em;
-        --measure: 60ch;
-        --accent: #e92438;
-        --soft: #f8efde;
-        --hard: #231f1e;
+        /* Spacing */
+        --ratio: 1.5;
+        --s0: 1rem;
+        --s-1: calc(var(--s0) / var(--ratio));
+        --s1: calc(var(--s0) * var(--ratio));
+        --s2: calc(var(--s1) * var(--ratio));
+        --s3: calc(var(--s2) * var(--ratio));
+        --measure: 100ch;
+
+        /* Palette */
+        --greyscale0: #ffffff;
+        --greyscale1: #f3f2ef;
+        --greyscale2: #cccccc;
+        --greyscale3: #999999;
+        --greyscale4: #191919;
+        --accent: #0a66c2;
+        --greyscale4-accent: #07498a;
       }
       body {
-        background-color: var(--soft);
-        color: var(--hard);
-        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        line-height: 1.5;
+        background-color: var(--greyscale1);
+        color: var(--greyscale4);
+        font-family: system-ui, Helvetica, Arial, sans-serif;
       }
+      /* Composition */
       main {
+        margin-top: var(--s0);
+        margin-bottom: var(--s0);
         margin-inline: auto;
-        max-inline-size: var(--measure);
-      }
-      main {
+        max-inline-size: min(var(--measure), 90vw);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
       }
-      main * {
+      main > * {
         max-width: 100%;
-        line-height: 1.5;
       }
-      main * + * {
+      main > * + * {
         margin-block-start: var(--s0);
       }
-      figure {
-        margin-inline-start: 0;
-        margin-inline-end: 0;
+      article {
+        background-color: var(--greyscale0);
+        box-shadow: 0px 0px 0px 1px var(--greyscale2);
+        border-radius: var(--s-1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block-end: var(--s0);
       }
-      figure > * + * {
-        margin-block-start: var(--s0);
+      article > * {
+        margin: var(--s0);
+        max-width: 80%;
       }
-      video {
-        width: 100%;
+      /* Utility */
+      .inline-block {
+        display: inline-block;
       }
-      main li + li {
-        margin-block-start: 0;
-      }
-      blockquote {
-        margin: 0;
+      .subtle {
+        color: var(--greyscale3);
       }
       .morse {
         line-height: 1.5;
         font-family: monospace;
         text-align: center;
       }
+      /* Block */
     </style>
   </head>
   <body>
@@ -328,7 +348,7 @@
         </video>
       </article>
       <article>
-        <h2>Fundamentals 10: California Routine Part 3</h2>
+        <h2>Fundamentals 11: California Routine Part 3</h2>
         <ul>
           <li>Tango</li>
           <li>Frog jump</li>
@@ -342,10 +362,10 @@
           />
         </video>
       </article>
-    </main>
-    <pre aria-hidden="true" class="morse">
+      <pre aria-hidden="true" class="morse">
 █ ███ █
 ███ ███
-    </pre>
+      </pre>
+    </main>
   </body>
 </html>
